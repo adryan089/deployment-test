@@ -53,7 +53,7 @@ jobs:
     needs: build
     steps:
       - name: Build the project
-        run: npm run dev
+        run: npm run build
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
